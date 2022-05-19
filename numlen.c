@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 int numlen(unsigned int i, int base)
 {

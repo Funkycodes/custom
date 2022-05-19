@@ -32,14 +32,14 @@ void ftoa(double n)
 
 	_printd(ipart, 10);
 	fpart = fpart * 1000000;
-	putchar('.');
+	_putchar('.');
 	_printd((int)fpart, 10);
 }
 
 void _printd(int num, int base)
 {
 	if (num < 0)
-		putchar('-');
+		_putchar('-');
 	if (num < 0)
 		num *= -1;
 	_printrev(itoa(num, base));
@@ -54,7 +54,7 @@ void _printx(int num)
 	if (num < 0)
 	{
 		num *= -1;
-		putchar('-');
+		_putchar('-');
 	}
 	_printrev(itoa(num, 16));
 }

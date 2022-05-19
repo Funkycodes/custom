@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <unistd.h>
 #include "main.h"
 
 int _printf(const char *fmt, ...)
@@ -46,7 +46,7 @@ int _printf(const char *fmt, ...)
 				break;
 			case 'c':
 				c = va_arg(list, int);
-				putchar(c);
+				_putchar(c);
 				count += 2;
 				printed += 1;
 				break;
@@ -82,7 +82,7 @@ int _printf(const char *fmt, ...)
 				printed += numlen(num, 16);
 				break;
 			case '%':
-				putchar('%');
+				_putchar('%');
 				printed += 1;
 				count += 1;
 				break;
@@ -93,7 +93,7 @@ int _printf(const char *fmt, ...)
 		}
 		else
 		{
-			putchar(fmt[count]);
+			_putchar(fmt[count]);
 			printed += 1;
 			count += 1;
 		}
@@ -107,6 +107,6 @@ int main(void)
 
 	printf("Lift is %x\n", 67894677);
 	_printf("Lift is %r %b\n", "Habib",64);
-	_printd(32,2);
-	putchar(10);
+	_printu(4294967295);
+	_putchar(10);
 }

@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 void _printrev(char *s)
 {
@@ -8,6 +7,6 @@ void _printrev(char *s)
 	s++;
 	_printrev(s);
 	s--;
-	putchar(*s);
+	_putchar(*s);
 }
 
