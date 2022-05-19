@@ -1,6 +1,4 @@
-# Project Name
-* _printf custom_
-
+# _printf
 ## Project basis
 ### Aim 
 Create a function _printf_ which mimic the functions of the printf() function found in the stdio.h  header. This function should, just like printf(), be able to take in a variable number of arguments. 
