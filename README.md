@@ -37,6 +37,6 @@ itoa.c          =>      contains all the functions necessary to handle conversio
 * Compiler : gcc
 * Style guide : Betty Style
 
-##Authors
+## Authors
 * theMaskedOtaku
 * emma Majekodunmi
